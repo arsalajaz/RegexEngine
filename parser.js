@@ -111,10 +111,6 @@ const parse = (expr) => {
     return stack[0];
 }
 
-import { inspect } from 'util';
-const regex = 'col(test)+(c*d+)+'
-const parsedRegex = parse(regex);
 
-console.log(inspect(parsedRegex, false, Infinity))
 
 export default parse;
